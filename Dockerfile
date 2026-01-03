@@ -1,10 +1,10 @@
-FROM python:3.10-slim
+FROM python:3.10
 
 WORKDIR /app
 
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --upgrade pip \
+    && pip install python-telegram-bot==20.3
 
 COPY . .
 
-CMD ["python", "bot.py"]
+CMD ["python", "poll.py"]
