@@ -13,6 +13,7 @@ from telegram.error import RetryAfter, BadRequest, Forbidden
 
 # ================= BOT TOKEN =================
 BOT_TOKEN = os.environ.get("BOT_TOKEN")
+print("BOT_TOKEN value:", BOT_TOKEN)
 # =============================================
 
 # --------- CLEAN LOGGING (NO CONSOLE NOISE) ----------
